@@ -163,7 +163,7 @@ In order to use Terraform and `cert-manager` with the Cloudflare DNS challenge y
     **All are required** unless otherwise noted in the comments.
 
     ```sh
-    cp .config.sample.env .config.env
+    cp .config.env .config.env
     ```
 
 2. Once that is done, verify the configuration is correct by running:

@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-
 set -o errexit
 set -o pipefail
-
 # shellcheck disable=SC2155
 export PROJECT_DIR=$(git rev-parse --show-toplevel)
 
@@ -28,10 +26,10 @@ main() {
     verify_binaries
 
     if [[ "${verify}" == 1 ]]; then
-        verify_ansible_hosts
-        verify_metallb
-        verify_kubevip
-        verify_addressing
+        # verify_ansible_hosts
+        # verify_metallb
+        # verify_kubevip
+        # verify_addressing
         verify_age
         verify_git_repository
         verify_cloudflare
